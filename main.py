@@ -39,20 +39,6 @@ def ruleAnd(a, b):
     return min(a, b)
 
 
-def fuzOr(a, b):
-    result = {}
-    for property in a:
-        result[property] = max(a[property], b[property])
-    return result
-
-
-def fuzAnd(a, b):
-    result = {}
-    for property in a:
-        result[property] = min(a[property], b[property])
-    return result
-
-
 def fuz(value):
     """
         Takes crisp value and return membershipness for fuzzy sets short, middle and long
